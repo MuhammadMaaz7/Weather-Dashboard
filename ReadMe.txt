@@ -70,3 +70,8 @@ This Weather App is a comprehensive web application that provides users with det
 - Integrate additional weather data sources for more comprehensive forecasts
 - Add night mode option.
 
+Deployment
+This project is deployed using GitHub Pages. You can view the live application at: https://muhammadmaaz7.github.io/Weather-Dashboard/tables.html
+
+Repository
+The source code for this project is available on GitHub: https://github.com/MuhammadMaaz7/Weather-Dashboard
