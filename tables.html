@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="tables.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <i class="fas fa-cloud-sun"></i>
+                <h1>WeatherApp</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="dashboard.html">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+                <a href="tables.html" class="active">
+                    <i class="fas fa-table"></i>
+                    Tables
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <button id="hamburger-menu" class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="search-container">
+                    <input type="text" id="cityInput" placeholder="Enter city name...">
+                    <button id="searchBtn">
+                        <i class="fas fa-search"></i>
+                        Get Weather 
+                    </button>
+                </div>
+                <div class="user-avatar">M</div>
+            </header>
+
+            <div class="content-area">
+                <div class="weather-table">
+                    <h2>Temperature Forecast</h2>
+                    
+                    <div class="table-container">
+                        <table id="forecast-table">
+                            <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Time</th>
+                                    <th>Temperature</th>
+                                    <th>Feels Like</th>
+                                    <th>Icon</th>
+                                    <th>Condition</th>
+                                </tr>
+                            </thead>
+                            <tbody id="forecast-body">
+                                <!-- Table content will be dynamically inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <div class="filter-container">
+                            <select id="filter-select">
+                                <option value="none">Select Filter</option>
+                                <option value="temp-asc">Temperature (Low to High)</option>
+                                <option value="temp-desc">Temperature (High to Low)</option>
+                                <option value="rain-only">Rainy Days Only</option>
+                                <option value="highest-temp">Highest Temperature</option>
+                            </select>
+                        </div>
+                        <button id="prev-btn" disabled>Previous</button>
+                        <span id="page-info">Page 1 of 1</span>
+                        <button id="next-btn" disabled>Next</button>
+                    </div>
+                </div>
+                <div class="chatbot">
+                    <h2>Chat Bar For Chatbot</h2>
+                
+                    <div class="chat-container">
+                        <div class="chat-messages">
+                            <!-- The welcome message will be added dynamically via JavaScript -->
+                        </div>
+                        
+                        <div id="loading-spinner" class="loading-spinner" style="display: none;">
+                            <div class="spinner"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input">
+                        <input type="text" id="user-input" placeholder="Ask about the weather...">
+                        <button id="send-btn">Send</button>
+                    </div>
+                </div>
+                
+        </main>
+    </div>
+    <script src="config.js"></script>
+    <script src="tables.js"></script>
+</body>
+</html>
