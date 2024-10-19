@@ -1,8 +1,13 @@
 // Constants
-const API_KEY = config.OPENWEATHER_API_KEY;
-const BASE_URL = config.OPENWEATHER_BASE_URL;
-const GEMINI_API_KEY = config.GEMINI_API_KEY;
-const GEMINI_API_URL = config.GEMINI_API_URL;
+// const API_KEY = config.OPENWEATHER_API_KEY;
+// const BASE_URL = config.OPENWEATHER_BASE_URL;
+// const GEMINI_API_KEY = config.GEMINI_API_KEY;
+// const GEMINI_API_URL = config.GEMINI_API_URL;
+
+const API_KEY = '84568c9d8b613ce5b360e349ac37a7a2';
+const BASE_URL = 'https://api.openweathermap.org/data/2.5';
+const GEMINI_API_KEY = 'AIzaSyBq1LA6tcA1GC3jKmUDqUw2gCoCOSKDQt4';
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent';
 
 const cityInput = document.getElementById('cityInput');
 const searchBtn = document.getElementById('searchBtn');

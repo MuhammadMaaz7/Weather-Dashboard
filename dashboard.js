@@ -1,5 +1,8 @@
-const API_KEY = config.OPENWEATHER_API_KEY;
-const BASE_URL = config.OPENWEATHER_BASE_URL;
+// const API_KEY = config.OPENWEATHER_API_KEY;
+// const BASE_URL = config.OPENWEATHER_BASE_URL;
+
+const API_KEY = '84568c9d8b613ce5b360e349ac37a7a2';
+const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 
 const cityInput = document.getElementById('cityInput');
 const searchBtn = document.getElementById('searchBtn');
